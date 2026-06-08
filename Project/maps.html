@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+
+  <title>Maps</title>
+
+  <link rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+  <script src="helper.js"></script>
+  <script src="script.js"></script>
+
+</head>
+
+<body onload="init()">
+
+  <nav class="container nav">
+
+    <a href="index.html"> Home </a>
+    <a href="maps.html"> Info </a>
+    <a href="charts.html"> Statistics </a>
+
+  </nav>
+
+  <div id="banner" class="container center">
+
+    <h1>HOTSPOT MAPS</h1>
+
+    <p class="subtitle">
+      Find WIFI hotspots around New York City.
+    </p>
+
+  </div>
+
+  <div class="container">
+
+    <select id="city">
+
+      <option value="Queens">Queens</option>
+      <option value="Brooklyn">Brooklyn</option>
+      <option value="New York">New York</option>
+      <option value="Bronx">Bronx</option>
+      <option value="Staten Island">Staten Island</option>
+
+    </select>
+
+    <select id="type">
+
+      <option value="Free">Free</option>
+      <option value="Limited Free">Limited Free</option>
+
+    </select>
+
+    &nbsp;
+
+    <input type="button"
+      value="Filter"
+      onclick="filterBytypeandcity()">
+
+  </div>
+
+  <div class="container">
+
+    <div id="leftPanel"></div>
+
+    <div id="map"></div>
+
+  </div>
+
+</body>
+
+</html>
+

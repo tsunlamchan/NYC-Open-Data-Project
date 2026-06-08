@@ -1,0 +1,179 @@
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: linear-gradient(to right, #0f172a, #1e293b);
+  color: white;
+}
+
+.container {
+  width: 90%;
+  max-width: 1400px;
+  margin: auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.nav {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  border-bottom: 2px solid #38bdf8;
+}
+
+.nav a {
+  color: white;
+  font-size: 18px;
+  margin: 0px 20px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  color: #38bdf8;
+}
+
+#banner {
+  padding: 80px 20px;
+  flex-direction: column;
+}
+
+#banner h1 {
+  font-size: 60px;
+  margin-bottom: 10px;
+  color: #38bdf8;
+  text-shadow: 0px 0px 10px rgba(56,189,248,0.7);
+}
+
+.subtitle {
+  font-size: 22px;
+  color: #cbd5e1;
+}
+
+.cards {
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(255,255,255,0.08);
+  border-radius: 15px;
+  padding: 25px;
+  width: 280px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0px 8px 20px rgba(56,189,248,0.5);
+}
+
+.card h2,
+.card h3,
+.card h5 {
+  color: #38bdf8;
+}
+
+.card p {
+  line-height: 1.6;
+  color: #e2e8f0;
+}
+
+.info-card {
+  width: 100%;
+  max-width: 900px;
+}
+
+#footer {
+  padding: 20px;
+  background-color: rgba(255,255,255,0.08);
+  border-top: 2px solid #38bdf8;
+  justify-content: center;
+}
+
+#footer h3 {
+  color: #38bdf8;
+}
+
+#leftPanel {
+  flex: 1;
+  max-height: 600px;
+  overflow-y: scroll;
+  padding-right: 20px;
+}
+
+#map {
+  flex: 2;
+  height: 600px;
+  min-width: 500px;
+  border-radius: 15px;
+  margin-left: 20px;
+  box-shadow: 0px 0px 15px rgba(56,189,248,0.3);
+}
+
+#output {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgba(255,255,255,0.05);
+  border-radius: 15px;
+  padding: 20px;
+}
+
+.fitter {
+  margin-bottom: 20px;
+}
+
+input[type=button] {
+  background-color: #38bdf8;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+input[type=button]:hover {
+  background-color: #0ea5e9;
+}
+
+select {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+}
+
+hr {
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+
+.about-section{
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.wifi-image{
+  width: 450px;
+  max-width: 100%;
+
+  border-radius: 15px;
+
+  box-shadow: 0px 0px 20px rgba(56,189,248,0.4);
+}
+
+.info-card{
+  flex: 1;
+  min-width: 400px;
+}
+
+text{
+  fill:white;
+}
