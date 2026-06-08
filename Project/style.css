@@ -13,6 +13,7 @@ body {
   padding: 20px;
   display: flex;
   flex-wrap: wrap;
+  gap: 20px;
 }
 
 .center {
@@ -90,10 +91,13 @@ body {
 }
 
 #footer {
-  padding: 20px;
+  width: 100%;
+  padding: 40px 20px;
   background-color: rgba(255,255,255,0.08);
   border-top: 2px solid #38bdf8;
-  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  margin-top: 40px;
 }
 
 #footer h3 {
@@ -101,10 +105,13 @@ body {
 }
 
 #leftPanel {
-  flex: 1;
-  max-height: 600px;
+  width:50%;
+  height: 600px;
   overflow-y: scroll;
   padding-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
 }
 
 #map {
@@ -129,18 +136,8 @@ body {
   margin-bottom: 20px;
 }
 
-input[type=button] {
-  background-color: #38bdf8;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  border-radius: 8px;
-  cursor: pointer;
-}
 
-input[type=button]:hover {
-  background-color: #0ea5e9;
-}
+
 
 select {
   padding: 10px;
