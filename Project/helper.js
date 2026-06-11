@@ -16,8 +16,7 @@ function showMap(lat,lon){
     "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
     {
       maxZoom: 18,
-      attribution:
-      "&copy; OpenStreetMap"
+      attribution:"&copy; <a href='http://www.openstreetmap.org/copyright'>OpenStreetMap</a>"
     }
   ).addTo(mapView);
 
